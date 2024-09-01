@@ -197,6 +197,103 @@
 .popular_content p{
   color: var(--text-light);
 }
+*{
+  padding: 0;
+  margin: 0;
+ 
+}
+header{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: space-around;
+  height: 70px;
+  box-shadow: 0px 5px rgb(235, 231, 231);
+  position: fixed;
+  z-index: 1;
+ 
+
+}
+.logo{
+  align-self: center;
+  margin-left: 50px;
+
+}
+.nav-bar{
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  min-width:50rem;
+  
+
+}
+.icons{
+  display:flex;
+  justify-content: space-evenly;
+  min-width: 300px;
+  align-self: center;
+}
+.nav-items{
+  text-decoration: none;
+  font-weight: bolder;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  max-width: 700px;
+  font-size: larger;
+
+
+}
+.icons span:hover{
+  color:#459BF8;
+}
+.nav-bar a:hover{
+  color:#459BF8;
+}
+.logo span{
+  color:#459BF8;
+}
+.search_bar{
+  display: flex;
+  align-items: center;
+  min-width: 20rem;
+
+}
+.search_icon{
+  box-sizing: content-box;
+  height: 20px;
+  padding:10px;
+  background-color: #f5f5f6;
+  color:#282c3f;
+  font-weight: 300;
+  border-radius: 4px 0 0 4px;;
+
+
+
+}
+.search_input{
+  color:#696e79;
+  background-color: #f5f5f6;
+  flex-grow: 1;
+  height:40px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+}
+.banner-image{
+  width:100%;
+  height:660px;
+  padding-top: 75px;
+  position: relative;
+}
+.banner-text{
+  position: absolute;
+  top:300px;
+  left:150px;
+  line-height:1.5;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+ 
+}
 @media (width<900px){
     .booking_container form{
       grid-template-columns: repeat(2,1fr);
