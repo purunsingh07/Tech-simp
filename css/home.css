@@ -117,3 +117,8 @@ header{
 .shop-button:hover{
     color: #459BF8;
 }
+@media (width<600px){
+     .nav-bar{
+      display: none;
+    }
+}

@@ -311,7 +311,7 @@ header{
     }
   }
   @media (width<600px){
-    .nav_links{
+    .nav-bar{
       display: none;
     }
     .header_container{
