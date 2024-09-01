@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+:root{
+    --button-color:#459BF8;
+    --service1:#7CBFFD;
+    --service2:#4FA9EE;
+    --primary-color:#efeaea;
+    --primary-color-dark:#F5FBFF;
+    --text-dark:#333333;
+    --text-light:#767268;
+    --extra-light:#f3f4f6;
+    --white:#ffffff;
+    --footer:#1F1F1F;
+    --client_card :white;
+    --popular_content:white;
+    --book-cont : rgba(255, 255, 255, 0.7);
+    --max-width: 1200px;
+    
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
