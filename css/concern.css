@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      background-color: #eef0f1;
+      
+}
+:root{
+    --button-color:#459BF8;
+    --service1:#7CBFFD;
+    --service2:#4FA9EE;
+    --primary-color:#efeaea;
+    --primary-color-dark:#F5FBFF;
+    --text-dark:#333333;
+    --text-light:#767268;
+    --extra-light:#f3f4f6;
+    --white:#ffffff;
+    --footer:#1F1F1F;
+    --client_card :white;
+    --popular_content:white;
+    --book-cont : rgba(255, 255, 255, 0.7);
+    --max-width: 1200px;
+    
+  }
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    height: 70px;
+    box-shadow: 0px 5px rgb(235, 231, 231);
+    position: fixed;
+    z-index: 1;
+   
+
+}
+.logo{
+    align-self: center;
+    margin-left: 50px;
+
+}
+.nav-bar{
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    min-width:50rem;
+    
+  
+}
+.icons{
+    display:flex;
+    justify-content: space-evenly;
+    min-width: 300px;
+    align-self: center;
+}
+.nav-items{
+    text-decoration: none;
+    font-weight: bolder;
+    color:var(--text-light);
+    max-width: 700px;
+    font-size: larger;
+
+
+}
+.icons span:hover{
+    color:#459BF8;
+}
+.nav-bar a:hover{
+    color:#459BF8;
+}
+.logo span{
+    color:#459BF8;
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+    min-width: 20rem;
+
+}
+.search_icon{
+    box-sizing: content-box;
+    height: 20px;
+    padding:10px;
+    background-color: #f5f5f6;
+    color:#282c3f;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;;
+
+
+
+}
+.search_input{
+    color:#696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height:40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+}
+.banner-image{
+    width:100%;
+    height:660px;
+    padding-top: 75px;
+    position: relative;
+}
+.banner-text{
+    position: absolute;
+    top:300px;
+    left:100px;
+    right: 600px;
+    line-height:1.5;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+   
+}
+.banner-text p{
+    line-height: normal;
+    color: rgb(71, 71, 71);
+}
+.banner-text h2{
+    color:#dbe5f0;
+
+
+}
+
+.shop-button{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(45, 43, 43);
+    color: rgb(205, 194, 194);
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.shop-button:hover{
+    color: #459BF8;
+}
+@media (width<600px){
+     .nav-bar{
+      display: none;
+    }
+}
+.popular_grid{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+  
+  .hotel{
+    height: 15rem;
+    width: 100%;
+  }
+  .popular_card{
+    overflow: hidden;
+    border-radius: rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  .popular_content{
+    background-color: var(--popular_content);
+    padding: 1rem;
+  }
+  .popular_card_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .popular_card_header h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  .popular_content p{
+    color: var(--text-light);
+  }
+ 
