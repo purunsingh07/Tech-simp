@@ -34,7 +34,7 @@ body{
         font-weight: 800;
         font-style: normal;
       }
-      background-color: #eef0f1;
+      background-color: #eceef7;
       
 }
 :root{
@@ -86,6 +86,7 @@ header{
     min-width: 300px;
     align-self: center;
 }
+
 .nav-items{
     text-decoration: none;
     font-weight: bolder;
@@ -96,10 +97,14 @@ header{
 
 }
 .icons span:hover{
-    color:#459BF8;
+    color:var(--service1);
+    scale: 1.1;
+    transition: all ease 1s ;
 }
 .nav-bar a:hover{
-    color:#459BF8;
+    color:var(--service1);
+    scale: 1.1;
+    transition: all ease 1s ;
 }
 .logo span{
     color:#459BF8;
@@ -108,7 +113,10 @@ header{
     display: flex;
     align-items: center;
     min-width: 20rem;
-
+}
+.search_bar:hover{
+    scale: 1.1;
+    transition: all ease 1s ; 
 }
 .search_icon{
     box-sizing: content-box;
@@ -152,7 +160,7 @@ header{
     color: rgb(71, 71, 71);
 }
 .banner-text h2{
-    color:#dbe5f0;
+    color:var(--service1);
 
 
 }
@@ -167,7 +175,10 @@ header{
     font-size: 15px;
 }
 .shop-button:hover{
-    color: #459BF8;
+    background-color: #eceef7;
+    color:var(--service1);
+    scale: 1.1;
+    transition: all ease 1s ;
 }
 @media (width<600px){
      .nav-bar{
@@ -192,7 +203,7 @@ header{
     padding: 15px 15px;
     border-radius: 10px;
     border:solid white 1.5px;
-    background-color: var(--service1);
+    background-color:var(--service1);
     color: white;
     font-weight: bold;
     font-size:large;
@@ -206,6 +217,8 @@ header{
 .service-button:hover{
     color: #459BF8 ;
     background-color: white;
+    scale: 1.1;
+    transition: all ease 1s;
 }
 .services{
     display: flex;
@@ -224,14 +237,13 @@ header{
     font-size: 30px;
 }
 .about h2{
-    background-color:#DEECFA;
     height: 80px;
     display: flex;
     justify-content: center;
     align-self: center;
 }
 .about span{
-    color: pink;
+    color:var(--service1);
 }
 .about-section{
     padding-top: 30px;
@@ -241,8 +253,13 @@ header{
 }
 .about-image{
     position: relative;
-    padding: 100px 150px;
+   padding: 20px;
+   
 }
+.about-image img {
+    box-shadow: 0px 4px 20px var(--service1); 
+    border-radius: 8px; }
+
 .anout-text{
     font-size: 20px;
     height: 300px;
@@ -251,6 +268,9 @@ header{
     max-width: 500px;
     margin-left: 50px;
     max-height:500px;
+}
+.anout-text span{
+    color: var(--service1);
 }
 .image-text{
    
@@ -268,13 +288,28 @@ header{
     background-clip: text;
 
 }
+.section_container{
+    padding-top: 1rem;
+    background-color: var(--primary-color-dark);
+}
+.section_container span{
+    color: var(--service1);
+}
 .section_container p{
+    font-weight: 700;
+    color: var(--text-light);
+    font-size:large;
     margin-top: 2rem;
     text-align: center;
 } 
 .section_container  h2{
     margin-top: 2rem;
     text-align: center;
+    font-size:50px;
+}
+.popular_card:hover img{
+    scale: 1.1;
+    transition: all ease 1s ;
 }
 .popular_grid{
     margin-top: 4rem;
@@ -293,7 +328,8 @@ header{
   .popular_card{
     overflow: hidden;
     border-radius: rem;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 20px var(--service1);
+    
   }
   .popular_content{
     background-color: var(--popular_content);
