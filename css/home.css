@@ -1,8 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 *{
     padding: 0;
     margin: 0;
    
 }
+body{
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+}
+:root{
+    --button-color:#459BF8;
+    --service1:#7CBFFD;
+    --service2:#4FA9EE;
+    --primary-color:#efeaea;
+    --primary-color-dark:#F5FBFF;
+    --text-dark:#333333;
+    --text-light:#767268;
+    --extra-light:#f3f4f6;
+    --white:#ffffff;
+    --footer:#1F1F1F;
+    --client_card :white;
+    --popular_content:white;
+    --book-cont : rgba(255, 255, 255, 0.7);
+    --max-width: 1200px;
+    
+  }
+
 header{
     display: flex;
     width: 100%;
@@ -37,7 +88,6 @@ header{
 .nav-items{
     text-decoration: none;
     font-weight: bolder;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
     max-width: 700px;
     font-size: larger;
@@ -122,3 +172,138 @@ header{
       display: none;
     }
 }
+.service1{
+    background-color:var(--service1);
+    padding: 2rem 3rem;
+}
+.service2{
+    background-color:var(--service2);
+    padding: 2rem 3rem;
+
+}
+.service-content{
+    color: white;
+    padding: 10px 5px;
+    font-size: larger;
+}
+.service-button{
+    padding: 15px 15px;
+    border-radius: 10px;
+    border:solid white 1.5px;
+    background-color: var(--service1);
+    color: white;
+    font-weight: bold;
+    font-size:large;
+    margin: 0  30%;
+    margin-top: 3%; 
+}
+.service2 button{
+    background-color: var(--service2);
+    padding: 15px 35px;
+}
+.service-button:hover{
+    color: #459BF8 ;
+    background-color: white;
+}
+.services{
+    display: flex;
+
+
+}
+.service1 h2{
+    font-size:xx-large
+}
+.service2 h2{
+    font-size:xx-large;
+}
+
+@media (width<900px){
+    .booking_container form{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .popular_grid{
+      grid-template-columns: repeat(2,1fr);
+      gap: 1rem;
+    }
+    .client_grid{
+      grid-template-columns: repeat(2,1fr);
+      gap: 1rem;
+    }
+    .footer_container{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media (width<600px){
+    .nav-bar{
+      display: none;
+    }
+    .header_container{
+      padding-bottom: 25rem;
+    }
+    .booking_container{
+      flex-direction: column;
+      bottom: -25rem;
+    }
+    .booking_container form{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .popular_grid{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .client_grid{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .footer_container{
+      gap: 2rem;
+    }
+  }
+  .footer{
+    background-color: var(--extra-light);
+  }
+  .footer_container{
+     display: grid;
+     grid-template-columns: 2fr repeat(3,1fr);
+     gap: 5rem;
+  }
+  .footer_col h3{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  .footer_col h4{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  .footer_col p{
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: .3s;
+  }
+  .footer_col p:hover{
+    color: var(--text-dark);
+  }
+  .footer_bar{
+    position: relative;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: right;
+    overflow: hidden;
+  }
+  .footer_bar::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 28rem;
+    transform: translateY(-50%);
+    width: 20rem;
+    height: 2px;
+    background-color: var(--text-light);
+  }
