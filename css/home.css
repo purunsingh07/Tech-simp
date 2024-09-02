@@ -88,7 +88,7 @@ header{
 .nav-items{
     text-decoration: none;
     font-weight: bolder;
-    color: black;
+    color:var(--text-light);
     max-width: 700px;
     font-size: larger;
 
@@ -216,6 +216,94 @@ header{
 .service2 h2{
     font-size:xx-large;
 }
+.about{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.about h2{
+    background-color: #fcf6f7;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.about span{
+    color: pink;
+}
+.about-section{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-image{
+    position: relative;
+    padding: 100px 150px;
+}
+.anout-text{
+    font-size: 20px;
+    height: 300px;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 500px;
+    margin-left: 50px;
+    max-height:500px;
+}
+.image-text{
+   
+    position: absolute;
+    top: 50%;
+    width:400px;
+    height: 60px;
+    text-align: center;
+    font-weight:1000;
+}
+.image-text h2 {
+    background-color: #f1f1f4;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+} 
+.popular_grid{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+  }
+  
+  .hotel{
+    height: 15rem;
+    width: 100%;
+  }
+  .popular_card{
+    overflow: hidden;
+    border-radius: rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  .popular_content{
+    background-color: var(--popular_content);
+    padding: 1rem;
+  }
+  .popular_card_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .popular_card_header h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  .popular_content p{
+    color: var(--text-light);
+  }
 
 @media (width<900px){
     .booking_container form{
