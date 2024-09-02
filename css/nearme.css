@@ -236,7 +236,7 @@ header{
 .nav-items{
   text-decoration: none;
   font-weight: bolder;
-  color: black;
+  color:var(--text-light);
   max-width: 700px;
   font-size: larger;
 
