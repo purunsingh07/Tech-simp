@@ -34,6 +34,7 @@ body{
         font-weight: 800;
         font-style: normal;
       }
+      background-color: #eef0f1;
       
 }
 :root{
@@ -223,7 +224,7 @@ header{
     font-size: 30px;
 }
 .about h2{
-    background-color: #fcf6f7;
+    background-color:#DEECFA;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -266,7 +267,15 @@ header{
     -webkit-text-fill-color: transparent;
     background-clip: text;
 
+}
+.section_container p{
+    margin-top: 2rem;
+    text-align: center;
 } 
+.section_container  h2{
+    margin-top: 2rem;
+    text-align: center;
+}
 .popular_grid{
     margin-top: 4rem;
     margin-bottom: 4rem;
