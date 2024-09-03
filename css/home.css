@@ -346,6 +346,14 @@ header{
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-dark);
+    text-align: center;
+  }
+  .popular_card_header h4:hover{
+    color: #459BF8 ;
+    background-color: white;
+    scale: 1.1;
+    transition: all ease 1s;
+
   }
   .popular_content p{
     color: var(--text-light);
