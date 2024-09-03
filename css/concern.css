@@ -68,6 +68,9 @@ header{
    
 
 }
+.section_header{
+  text-align: center;
+}
 .logo{
     align-self: center;
     margin-left: 50px;
@@ -173,44 +176,57 @@ header{
       display: none;
     }
 }
+.popular_card:hover img{
+  scale: 1.1;
+  transition: all ease 1s ;
+}
 .popular_grid{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-  }
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.hotel{
+  height: 15rem;
+  width: 100%;
+}
+.popular_card{
+  overflow: hidden;
+  border-radius: rem;
+  box-shadow: 5px 5px 20px var(--service1);
   
-  .hotel{
-    height: 15rem;
-    width: 100%;
-  }
-  .popular_card{
-    overflow: hidden;
-    border-radius: rem;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-  }
-  .popular_content{
-    background-color: var(--popular_content);
-    padding: 1rem;
-  }
-  .popular_card_header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  .popular_card_header h4{
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-dark);
-  }
-  .popular_content p{
-    color: var(--text-light);
-  }
+}
+.popular_content{
+  background-color: var(--popular_content);
+  padding: 1rem;
+}
+.popular_card_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.popular_card_header h4{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+}
+.popular_card_header h4:hover{
+  color: #459BF8 ;
+  background-color: white;
+  scale: 1.1;
+  transition: all ease 1s;
+
+}
+.popular_content p{
+  color: var(--text-light);
+}
   .footer{
     background-color: var(--extra-light);
   }
