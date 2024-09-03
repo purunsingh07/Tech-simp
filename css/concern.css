@@ -278,5 +278,21 @@ header{
     background-color: var(--text-light);
   }
   .section_container{
-     padding: 8rem;
-  }
+    padding-top: 8rem;
+    background-color: var(--primary-color-dark);
+}
+.section_container span{
+    color: var(--service1);
+}
+.section_container p{
+    font-weight: 700;
+    color: var(--text-light);
+    font-size:large;
+    margin-top: 2rem;
+    text-align: center;
+} 
+.section_container  h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size:50px;
+}
